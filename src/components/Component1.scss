@@ -1,0 +1,147 @@
+
+$bgcolor : #131317;
+$bgcolor2 : #FF4448;
+$text-color : white;
+$text-font : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+body {
+    background: $bgcolor;
+}
+
+
+.phishrImg{
+    margin-top: 20px;
+}
+
+.display{
+    color: $text-color;
+    font-weight: 350;
+    font-size: 23px;
+    margin-bottom: 33px;
+    font-family: $text-font;
+    margin-top: 60px;
+}
+
+//----------------------------------------------------
+
+.result-text{
+    font-size: 40px;
+    font-weight: bolder;
+    animation: flicker 1.8s infinite alternate; 
+
+/* Flickering animation */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 4px #fff,
+        0 0 4px #fff,
+        0 0 15px #3cc6d8,
+        0 0 20px #3cc6d8,
+
+    }
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+}
+
+
+// Shows RED glow if probability > 70%
+.result-text-malicious{
+    font-size: 40px;
+    font-weight: bolder;
+    animation: flicker-malicious 1.8s infinite alternate; 
+
+/* Flickering animation */
+@keyframes flicker-malicious {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 4px #fff,
+        0 0 4px #fff,
+        0 0 15px #ff0000,
+        0 0 20px #ff0000,
+
+    }
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+}
+
+//----------------------------------------------------
+
+.url-input{
+width: 700px;
+height: 53px;
+border-radius:4px;
+font-size: larger;
+padding-left: 12px;
+margin-bottom: 20px;
+margin-top: 30px;
+border-color: white;
+}
+
+
+// -----------------------------------------------
+// Code for glowing button
+
+button {
+    font-size: 23px;
+    font-weight: 600;
+    margin: 20px;
+    width: 230px;
+    height: 60px;
+    border-radius: 4px;
+    cursor:pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    outline: none;
+    display: block;
+}
+
+.detect-button {
+    color: #1c5169;
+    background-color: #93f0ff
+    ;
+    -webkit-transition: .3s all ease-in;
+    transition: .3s all ease-in;
+    border: 2px solid transparent;
+}
+ 
+.detect-button:hover{
+    -webkit-box-shadow: 0px 0px 20px 15px #3cc6d8;
+    box-shadow: 0px 0px 25px 15px #3cc6d8;
+    background-color: #d7f3ff;
+}
+
+
+.detect-button:active {
+    transform: scale(0.82);
+    /* Scaling button to 0.92 to its original size */
+    box-shadow: 5px 3px 25px 2px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

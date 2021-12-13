@@ -1,0 +1,100 @@
+
+$bgcolor2 : #FF4448;
+$text-color : white;
+$text-font : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+// When screen width bigger than 1310px
+@media screen and (min-width:1310px) {
+
+    .component2{
+        background : $bgcolor2 ;
+        margin-top: 60px;
+        margin-right: 75px;
+        margin-left: 75px;
+        overflow: auto;
+        max-width: 2000px;
+        border-radius: 8px;
+    }
+
+    .phishing-img{
+        border-radius: 4px;
+        float: left;
+        width:500px;
+        height:250px;
+        margin-right:100px;
+        margin-left:100px;
+        margin-top: 10px;
+      
+     
+    }
+    
+    .phishing-description{
+        margin-top: 40px;
+        font-style: italic;
+        font-size:20px;
+        font-weight: 400;
+        position:relative;
+        padding-right: 45px;
+        padding-left: 45px;
+        font-family: $text-font;
+        color:$text-color;
+    }
+
+  }
+
+
+
+// When screen width less than 1310px
+@media screen and (max-width:1310px) {
+
+    .component2{
+        background : $bgcolor2 ;
+        margin-top: 60px;
+        margin-right: 75px;
+        margin-left: 75px;
+        overflow: auto;
+        max-width: 2000px;
+        border-radius: 8px;
+    }
+
+    .phishing-img{
+        border-radius: 4px;
+        width:500px;
+        height:250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-top: 35px;
+    }
+
+    .phishing-description{
+        margin-top: 40px;
+        font-style: italic;
+        font-size:20px;
+        font-weight: 400;
+        position:relative;
+        padding-bottom: 15px;
+        padding-right: 45px;
+        padding-left: 45px;
+        font-family: $text-font;
+        color:$text-color;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

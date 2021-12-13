@@ -1,0 +1,104 @@
+
+$bgcolor2 : #FF4448;
+$text-color : white;
+$text-font : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+.list{
+    font-family: $text-font;
+    font-size: 18px;
+}
+
+h3{
+    font-family: $text-font;
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.hdw{
+    color:$text-color;
+    font-family: $text-font;
+    font-size: 36px;
+    margin-top: 70px;
+    font-weight: 400;
+}
+
+.hdw-para{
+    color:$text-color;
+    font-family: $text-font;
+    font-size: 22px;
+    font-weight: 300;
+    margin-left:130px;
+    margin-right:130px;
+    margin-bottom: 50px;
+    max-width: 850px;
+}
+
+
+.container {
+    width:650px;
+    height:260px;
+    padding-top:25px;
+    padding-bottom: 40px;
+    padding-left:31px;
+    padding-right:31px;
+  margin: auto;
+  margin-bottom: 50px;
+  max-width: 1540px;
+  border-radius: 5px;
+  background: #d7e1ec;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0, .3);
+}
+
+
+$box-height : 280px;
+$box-width : 190px;
+
+.length-features {
+    float:left;
+    width:$box-width;
+    height:$box-height;
+    border-radius: 7px;
+    background-color:white;
+    box-sizing: border-box;
+}
+
+.count-features{
+    float:left;
+    width:$box-width;
+    height:$box-height;
+    border-radius: 7px;
+    background-color:white; 
+    margin-left:40px;
+    box-sizing: border-box;
+}
+
+.binary-features{
+    float:right;
+    width:$box-width;
+    height:$box-height;
+    border-radius: 7px;
+    background-color:white;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
