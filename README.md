@@ -1,7 +1,24 @@
 # phishr
 
+### A Cybersecurity utility for detecting malicious phishing URLs using Machine Learning
+
+
 <div align="center">
-<Img src="/assets/Phishr.png"/>
+<Img src="/src/assets/Phishing-Attacks.gif" width="60%"/>
 </div>
   
-PHISHr - A Cyber security utility for detecting malicious phishing URLs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
