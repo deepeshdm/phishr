@@ -26,7 +26,8 @@ npm start
 ```
 
 
-
+- Checkout the REST API - [here](https://github.com/deepeshdm/Phishr-API) .
+- Model Training repository - [here](https://github.com/deepeshdm/Phishing-Attack-Domain-Detection)
 
 
 
