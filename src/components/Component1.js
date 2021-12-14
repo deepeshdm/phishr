@@ -94,7 +94,7 @@ const Component1 = () => {
           onClick={() => get_Prediction(input_Url)}
         >
           {" "}
-          SCAN{" "}
+          SCAN URL{" "}
         </button>
       </div>
     </div>
