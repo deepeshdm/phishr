@@ -1,4 +1,4 @@
-# phishr
+# PHISHr
 
 ### A Cybersecurity utility for detecting malicious phishing URLs using Machine Learning
 
