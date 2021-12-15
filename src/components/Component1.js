@@ -5,44 +5,44 @@ import Loading from "./Loader";
 import { useState } from "react";
 const axios = require("axios");
 
-
-
 const Component1 = () => {
-
   const [input_Url, setUrl] = useState("");
   const [result, setResult] = useState(0);
-  const [isFetchingData,setFetchingData] = useState(false);
+  const [isFetchingData, setFetchingData] = useState(false);
   // glows result RED if probability > 70%
-  const [resultStyle,setResultStyle] = useState("result-text")
-
+  const [resultStyle, setResultStyle] = useState("result-text");
 
   // Renders the loader when fetching data
-  const ConditionalRender = ()=>{
-
-    if(isFetchingData){
-      return (<Loading className="loader" type={"bars"} color={"#fff"} width={"80px"} height={"80px"} />)
-    }else{
-      return(
+  const ConditionalRender = () => {
+    if (isFetchingData) {
+      return (
+        <Loading
+          className="loader"
+          type={"bars"}
+          color={"#fff"}
+          width={"80px"}
+          height={"80px"}
+        />
+      );
+    } else {
+      return (
         <p className="display">
-        There is <text className={resultStyle}> {result}% </text> 
-        chance the website or the URL provided is malicious.
-      </p>
-      )
+          There is <text className={resultStyle}> {result}% </text>
+          chance the website or the URL provided is malicious.
+        </p>
+      );
     }
-
-  }
-
+  };
 
   // Send post request and returns probability value
   function get_Prediction(url) {
-
-    setFetchingData(true)
+    setFetchingData(true);
 
     if (url.length <= 5) {
-      console.log("URL provided is less than 5 characters !")
-      setResult(0)
-      setFetchingData(false)  
-      setResultStyle("result-text")
+      console.log("URL provided is less than 5 characters !");
+      setResult(0);
+      setFetchingData(false);
+      setResultStyle("result-text");
       return;
     }
 
@@ -51,7 +51,7 @@ const Component1 = () => {
     // No need to convert to json string
     var data = { url: url };
 
-    console.log("Sending post request !")
+    console.log("Sending post request !");
 
     axios
       .post(api_url, data)
@@ -62,25 +62,25 @@ const Component1 = () => {
         console.log(data);
         const proba = data["prediction"];
         setResult(proba);
-        if(proba>70){
-          console.log("Proba > 70 ,glow red !")
-          setResultStyle("result-text-malicious")
+        if (proba > 70) {
+          console.log("Proba > 70 ,glow red !");
+          setResultStyle("result-text-malicious");
         }
-        setFetchingData(false)
+        setFetchingData(false);
       })
       .catch((error) => {
         // handle error
         console.log("Request is NOT Sucessful !");
         console.log(error);
-        setFetchingData(false)
-        setResultStyle("result-text")
+        setFetchingData(false);
+        setResultStyle("result-text");
       });
   }
 
   return (
     <div className="component1" align="center">
-      <img className="phishrImg" src={phishinglogo} alt="Phishing Logo"/>
-      <ConditionalRender/>
+      <img className="phishrImg" src={phishinglogo} alt="Phishing Logo" />
+      <ConditionalRender />
       <div>
         <input
           autoFocus={true}

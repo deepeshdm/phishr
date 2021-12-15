@@ -128,10 +128,8 @@ button {
 // MOBILE RESPONSIVE
 // This section contains css for devices of width below 730px
 
-
-// css for viewport width 412 and
-@media (max-width: 412px){
-
+// css for viewport width 412 and below
+@media (max-width: 412px) {
   .phishrImg {
     margin-top: 20px;
     margin-left: 35vw;
@@ -167,14 +165,10 @@ button {
     border: 2px solid transparent;
     margin-left: 250px;
   }
-
 }
 
-
-
 // css for viewport width 412px-720px
-@media (min-width:412px) and (max-width:721px){
-
+@media (min-width: 412px) and (max-width: 721px) {
   .phishrImg {
     margin-top: 20px;
     margin-left: 35vw;
@@ -195,7 +189,6 @@ button {
 
     //-----------------------------
     margin-left: 150px;
-
   }
 
   .url-input {
@@ -210,8 +203,6 @@ button {
     //-----------------------------
     margin-left: 115px;
     width: 555px;
-
-
   }
 
   .detect-button {
@@ -225,19 +216,4 @@ button {
     //-----------------------
     margin-left: 280px;
   }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
