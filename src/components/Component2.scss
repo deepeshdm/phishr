@@ -21,8 +21,8 @@ $text-font : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     .phishing-img{
         border-radius: 4px;
         float: left;
-        width:500px;
-        height:250px;
+        width:50%;
+        height:50%;
         margin-right:100px;
         margin-left:100px;
         margin-top: 10px;
@@ -61,12 +61,11 @@ $text-font : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     .phishing-img{
         border-radius: 4px;
-        width:500px;
-        height:250px;
+        width:70%;
+        height:70%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
         padding-top: 35px;
     }
 
@@ -88,12 +87,97 @@ $text-font : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
 
+// ------------------------------------------------------------
+
+// MOBILE RESPONSIVE
+// This section contains css for devices of width below 730px
+
+
+// css for viewport width 412 and below
+@media (max-width: 412px) {
+
+
+       .component2{
+        background : $bgcolor2 ;
+        margin-top: 60px;
+        margin-left: 108px;
+        overflow: auto;
+        border-radius: 8px;
+        min-width: 500px;
+    }
+
+    .phishing-img{
+        border-radius: 4px;
+        width:80vw;
+        height:70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 35px;
+    }
+
+    .phishing-description{
+        margin-top: 40px;
+        font-style: italic;
+        font-size:20px;
+        font-weight: 400;
+        position:relative;
+        padding-bottom: 15px;
+        padding-right: 45px;
+        padding-left: 45px;
+        font-family: $text-font;
+        color:$text-color;
+    }
+
+
+}
 
 
 
 
+// css for viewport width 412px-720px
+@media (min-width:412px) and (max-width:721px){
 
 
+    .component2{
+        background : $bgcolor2 ;
+        margin-top: 60px;
+        overflow: auto;
+        border-radius: 8px;
+        min-width: 500px;
+
+        //-----------------------
+        margin-left: 160px;
+
+    }
+
+    .phishing-img{
+        border-radius: 4px;
+        width:80vw;
+        height:70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 35px;
+
+        //------------------------
+        width:85vw;
+    }
+
+    .phishing-description{
+        margin-top: 40px;
+        font-style: italic;
+        font-size:20px;
+        font-weight: 400;
+        position:relative;
+        padding-bottom: 15px;
+        padding-right: 45px;
+        padding-left: 45px;
+        font-family: $text-font;
+        color:$text-color;
+    }
+
+}
 
 
 
