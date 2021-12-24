@@ -16,6 +16,7 @@ const Component1 = () => {
   const ConditionalRender = () => {
     if (isFetchingData) {
       return (
+        <div className="loader-container">
         <Loading
           className="loader"
           type={"bars"}
@@ -23,6 +24,7 @@ const Component1 = () => {
           width={"80px"}
           height={"80px"}
         />
+        </div>
       );
     } else {
       return (

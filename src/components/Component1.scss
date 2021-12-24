@@ -130,6 +130,7 @@ button {
 
 // css for viewport width 412 and below
 @media (max-width: 412px) {
+
   .phishrImg {
     margin-top: 20px;
     margin-left: 35vw;
@@ -169,6 +170,12 @@ button {
 
 // css for viewport width 412px-720px
 @media (min-width: 412px) and (max-width: 721px) {
+
+  .loader-container{
+    margin-left: 350px;
+  }
+
+
   .phishrImg {
     margin-top: 20px;
     margin-left: 35vw;
