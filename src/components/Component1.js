@@ -48,7 +48,7 @@ const Component1 = () => {
       return;
     }
 
-    const api_url = "https://phishhr.herokuapp.com/predict";
+    const api_url = "https://phishr-api.up.railway.app/predict";
 
     // No need to convert to json string
     var data = { url: url };
