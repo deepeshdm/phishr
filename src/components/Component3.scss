@@ -34,7 +34,7 @@ h3 {
 
 .container {
   width: 650px;
-  height: 260px;
+  height: 200px;
   padding-top: 25px;
   padding-bottom: 40px;
   padding-left: 31px;
@@ -43,38 +43,41 @@ h3 {
   margin-bottom: 50px;
   max-width: 1540px;
   border-radius: 5px;
-  background: #d7e1ec;
+  background: #000000;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
-$box-height: 280px;
+$box-height: 150px;
 $box-width: 190px;
 
 .length-features {
+  color: #d7e1ec;
   float: left;
   width: $box-width;
   height: $box-height;
   border-radius: 7px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   box-sizing: border-box;
 }
 
 .count-features {
+  color: #d7e1ec;
   float: left;
   width: $box-width;
   height: $box-height;
   border-radius: 7px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   margin-left: 40px;
   box-sizing: border-box;
 }
 
 .binary-features {
+  color: #d7e1ec;
   float: right;
   width: $box-width;
   height: $box-height;
   border-radius: 7px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   box-sizing: border-box;
 }
 
@@ -113,7 +116,7 @@ $box-width: 190px;
     padding-bottom: 40px;
     max-width: 300vw;
     border-radius: 5px;
-    background: #d7e1ec;
+    background: #000000;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
     margin-bottom: 50px;
     margin-left: 3px;
@@ -154,7 +157,7 @@ $box-width: 190px;
     padding-bottom: 40px;
     max-width: 300vw;
     border-radius: 5px;
-    background: #d7e1ec;
+    background: #000000;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
     margin-bottom: 50px;
 

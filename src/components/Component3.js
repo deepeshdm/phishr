@@ -60,17 +60,20 @@ const Component3 = () => {
 
       <div className="container">
         <div className="length-features">
-          <h3 align="center"> Length Features </h3>
+          <h3 align="center"> <b> Length Features </b> </h3>
+          <br/>
           <ul> {Length_features} </ul>
         </div>
 
         <div className="count-features">
-          <h3 align="center"> Count Features </h3>
+          <h3 align="center"> <b> Count Features </b> </h3>
+          <br/>
           <ul> {Count_features} </ul>
         </div>
 
         <div className="binary-features">
-          <h3 align="center"> Binary Features </h3>
+          <h3 align="center"> <b> Binary Features </b> </h3>
+          <br/>
           <ul> {Binary_features} </ul>
         </div>
       </div>
