@@ -67,28 +67,27 @@ export function PrimaryBody(props) {
       <p className="font-light max-sm:mx-3 max-sm:text-xl sm:text-2xl md:text-4xl mt-8 text-center">
         Don't get Hooked by a Phish again ! 👮‍♂️
       </p>
+
       <p className="font-normal mt-1 text-center text-gray-500 text-sm sm:text-lg mx-7">
         Don't get caught in a phishing trap. Happens 2.6 million times a year,
         but with our app, you can protect yourself.
       </p>
 
       <img src={PhishGif} alt="Phishing Gif"
-        className="max-sm:w-[50%] sm:w-[40%] md:w-[27%] max-md:ml-[30%] md:ml-[40%] lg:w-[24%] mt-3"
-      />
+        className="max-sm:w-[50%] sm:w-[40%] md:w-[27%] max-md:ml-[30%] md:ml-[40%] lg:w-[24%] mt-3"/>
 
-      <div className="flex flex-row gap-x-10 mt-5">
-        <input
-          type="text"
-          placeholder="Enter website domain address or URL (eg- www.Tesla.com)"
-          onChange={(event) => setUrl(event.target.value)}
-          className="ml-[25%] px-3 text-lg py-3 border-2 border-gray-600 rounded-sm w-[40%]"
-        />
+      <div className="flex max-md:flex-col md:flex-row mt-5">
+
+        <input type="text" placeholder="Enter website address or URL (eg- www.Tesla.com)" onChange={(event) => setUrl(event.target.value)}
+        className=" px-1 py-3 md:px-3 md:py-3 border-2 border-gray-600 rounded-sm text-xs min-[550px]:text-sm 
+        md:text-lg mx-10 md:mx-3 min-[550px]:mx-20 md:w-[60%] md:ml-[12%] lg:w-[50%] lg:ml-[20%]"/>
+
         <button
           onClick={() => get_Prediction(input_Url, showProgress, navigate)}
-          className="px-5 py-4 text-center w-fit bg-amber-400 hover:bg-amber-500 active:bg-amber-300 text-white font-extrabold text-roboto rounded"
-        >
+          className="px-5 py-4 text-center w-fit bg-amber-400 hover:bg-amber-500 active:bg-amber-300 text-white font-extrabold text-roboto rounded">
           SCAN URL
         </button>
+
       </div>
     </>
   );
