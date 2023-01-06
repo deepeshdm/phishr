@@ -8,10 +8,14 @@ const axios = require("axios");
 
 // Send post request and returns probability value
 function get_Prediction(url, showProgress, navigate) {
+
   if (url.length <= 5) {
     console.log("URL provided is less than 5 characters !");
     return;
   }
+
+  // Lowercase the string
+  url = url.toLowerCase();
 
   // Make progressbar visible
   showProgress(true);
