@@ -79,12 +79,13 @@ export function PrimaryBody(props) {
       <div className="flex max-md:flex-col md:flex-row mt-5">
 
         <input type="text" placeholder="Enter website address or URL (eg- www.Tesla.com)" onChange={(event) => setUrl(event.target.value)}
-        className=" px-1 py-3 md:px-3 md:py-3 border-2 border-gray-600 rounded-sm text-xs min-[550px]:text-sm 
-        md:text-lg mx-10 md:mx-3 min-[550px]:mx-20 md:w-[60%] md:ml-[12%] lg:w-[50%] lg:ml-[20%]"/>
+        className="border-2 border-gray-600 rounded-sm text-xs min-[550px]:text-sm  md:text-lg  px-1 py-3 md:px-3 md:py-3 
+       mx-10 md:mx-3 min-[550px]:mx-20 md:w-[60%] lg:w-[50%] md:ml-[12%] lg:ml-[20%]"/>
 
         <button
           onClick={() => get_Prediction(input_Url, showProgress, navigate)}
-          className="px-5 py-4 text-center w-fit bg-amber-400 hover:bg-amber-500 active:bg-amber-300 text-white font-extrabold text-roboto rounded">
+          className="px-4 py-3 text-center w-fit bg-amber-400 hover:bg-amber-500 active:bg-amber-300 max-md:mt-5 max-sm:ml-[38%] sm:max-md:ml-[40%]
+          text-white font-extrabold text-roboto rounded">
           SCAN URL
         </button>
 
