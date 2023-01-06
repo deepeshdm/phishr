@@ -1,17 +1,45 @@
 import './App.css';
-import Component1 from './components/Component1';
-import Component2 from './components/Component2';
-import Component3 from './components/Component3';
-import Component4 from './components/Component4';
+import { useState } from 'react';
+import { Route, Routes, Navigate, BrowserRouter as Router  } from 'react-router-dom';
+import LinearProgress from '@mui/material/LinearProgress';
+import { Header } from './components/header/Header';
+import { Footer } from './components/footer/Footer';
+import { PrimaryBody } from './components/body-primary/PrimaryBody';
+import { SecondaryBody } from './components/body-secondary/SecondaryBody';
+import { Result } from './components/result/Result';
 
-function App() {
+
+function NotFound(){ 
+  // Redirect all unknown paths to /
+  return <Navigate to="/" />
+}
+
+
+function FrontPage(){
+  const [showProgress,setProgressVisible] = useState(false);
+
   return (
     <div>
-      <Component1/>
-      <Component2/>
-      <Component3/>
-      <Component4/>
+      <Header/>
+      {showProgress ? <LinearProgress color="error"/> : null}
+      <PrimaryBody showProgress={setProgressVisible}/>
+      <SecondaryBody/>
+      <Footer/>
     </div>
+  );
+}
+
+
+function App() {
+
+  return (
+    <Router>
+    <Routes>
+      <Route path="/" element={<FrontPage/>}/>
+      <Route path="/result" element={<Result/>}/>
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+    </Router>
   );
 }
 
