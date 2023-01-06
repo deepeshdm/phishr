@@ -41,7 +41,7 @@ export function Result(props) {
     <h1 className="font-semibold text-center max-sm:text-xl sm:text-2xl "> "{input_url}" </h1>
 
       <h1 className="font-light text-center mt-3 max-sm:text-lg sm:text-2xl md:text-3xl ">
-        There's is <span className="font-extrabold"> {url_score} % </span> chance the URL is malicious !!!
+        There's is <span className="font-extrabold"> {url_score} % </span> chance URL is malicious !
       </h1>
 
       <button 
