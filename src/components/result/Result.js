@@ -34,15 +34,19 @@ export function Result(props) {
   return (
     <>
     <Header/>
-    { url_score>60 ? <img src={WarningGif} alt="Warn Gif" className="ml-[37%] w-[24%] mt-5" /> : <img src={SafeGif} alt="Safe Gif" className="ml-[37%] w-[24%] mt-5" /> }
-    <h1 className="text-2xl font-bold text-center">
-    "{input_url}"
-    </h1>
-      <h1 className="text-3xl font-light text-center mt-3">
-        There's is <span className="font-bold"> {url_score} % </span> chance the URL is malicious !!!
+    
+    { url_score>60 ? <img src={WarningGif} alt="Warn Gif" className="ml-[23%] w-[55%] sm:ml-[33%] sm:w-[38%] lg:ml-[37%] lg:w-[26%] mt-2" /> : 
+    <img src={SafeGif} alt="Safe Gif" className="ml-[23%] w-[55%] sm:ml-[31%] sm:w-[38%] lg:ml-[37%] lg:w-[26%] mt-2" /> }
+
+    <h1 className="font-semibold text-center max-sm:text-xl sm:text-2xl "> "{input_url}" </h1>
+
+      <h1 className="font-light text-center mt-3 max-sm:text-lg sm:text-2xl md:text-3xl ">
+        There's is <span className="font-extrabold"> {url_score} % </span> chance the URL is malicious !!!
       </h1>
+
       <button 
-      className="px-5 py-3 text-center ml-[46%] mt-10 w-fit bg-amber-400 hover:bg-amber-500 active:bg-amber-300 text-white font-extrabold text-roboto rounded"
+      className="px-5 py-3 text-center mt-8 w-fit bg-amber-400 hover:bg-amber-500 
+      active:bg-amber-300 text-white font-extrabold text-roboto rounded ml-[37%] sm:ml-[42%] md:ml-[44%] lg:ml-[46%]"
       onClick={() => navigate("/")}> Try again ? </button>
     </>
   );
