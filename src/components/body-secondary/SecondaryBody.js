@@ -7,7 +7,7 @@ export function SecondaryBody(){
     return(
         <>
       <div className="relative">
-      <img src={BackgroundShape} className="mt-1" />
+      <img src={BackgroundShape} alt="BackgroundImage" className="mt-1" />
       <p className="absolute top-28 left-[42%] text-white font-semibold text-3xl text-roboto text-center"> How does it Work ? </p>
       <p className="absolute top-40 text-roboto text-white font-light text-lg mx-24 text-center"> 
         Phishing is a type of online scam where criminals impersonate legitimate organizations 

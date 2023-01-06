@@ -72,7 +72,7 @@ export function PrimaryBody(props) {
         but with our app, you can protect yourself.
       </p>
 
-      <img src={PhishGif} className="ml-[40%] w-[24%] mt-3" />
+      <img src={PhishGif} alt="Phishing Gif" className="ml-[40%] w-[24%] mt-3" />
 
       <div className="flex flex-row gap-x-10 mt-5">
         <input

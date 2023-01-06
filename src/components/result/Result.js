@@ -34,7 +34,7 @@ export function Result(props) {
   return (
     <>
     <Header/>
-    { url_score>60 ? <img src={WarningGif} className="ml-[37%] w-[24%] mt-5" /> : <img src={SafeGif} className="ml-[37%] w-[24%] mt-5" /> }
+    { url_score>60 ? <img src={WarningGif} alt="Warn Gif" className="ml-[37%] w-[24%] mt-5" /> : <img src={SafeGif} alt="Safe Gif" className="ml-[37%] w-[24%] mt-5" /> }
     <h1 className="text-2xl font-bold text-center">
     "{input_url}"
     </h1>
