@@ -30,20 +30,17 @@ function get_Prediction(url, showProgress, navigate) {
   axios
     .post(api_url, data)
     .then((response) => {
+
       // handle success
       const data = response.data;
       console.log("Request is Sucessful !");
       console.log(data);
-      const proba = data["prediction"];
-      if (proba > 60) {
-        console.log("Proba > 60 !");
-      }
+      const output = data["prediction"];
 
       // Make progressbar invisible
       showProgress(false);
-
       // Navigate to /result
-      navigate("/result", { state: { inputUrl: url, url_score: proba } });
+      navigate("/result", { state: { inputUrl: url, output: output } });
     })
     .catch((error) => {
       // handle error

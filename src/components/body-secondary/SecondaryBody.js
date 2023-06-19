@@ -13,20 +13,17 @@ export function SecondaryBody() {
         </p>
         <p className="absolute text-roboto text-white font-light text-center
          max-sm:text-xs sm:text-sm md:text-base lg:text-lg max-sm:top-20 top-24 lg:top-36 max-md:mx-7 md:mx-14 lg:mx-20">
-          Phishing is a type of online scam where criminals impersonate
-          legitimate organizations via email, text message, advertisement or
-          other means in order to steal sensitive information. This is usually
-          done by including a link that will appear to take you to the company’s
-          website to fill in your information – but the website is a clever fake
-          and the information you provide goes straight to the crooks behind the
-          scam. To detect the malicious websites in the most efficient way, we
-          use a Machine Learning method called Artificial Neural Network which
-          was trained on a dataset of 600,000 legitimate and malicious URLs.
-          
-          <br/> <br/>
-         <span className="font-bold sm:text-sm underline text-amber-400 hover:text-white mb-5"> 
-         <a href="https://github.com/deepeshdm/Phishing-Attack-Domain-Detection" target="_blank" rel="noreferrer">
-         LEARN MORE </a> </span>
+          Phishing is a prevalent online scam where criminals impersonate legitimate sites. To combat this threat, we have implemented
+          an advanced system that combines multiple techniques for efficient detection of malicious URLs. Our system employs an Artificial Neural
+          Network trained on a dataset of 600,000 URLs and enhances its capabilities by extensively analyzing the top 1 million URLs on the World
+          Wide Web. Furthermore, we cross-reference these URLs with blacklists from trusted sources like Google, Norton, URLVoid, and others.
+          These comprehensive upgrades empower our system to identify and protect users from malicious websites, providing a robust defense against
+          phishing scams.
+
+          <br /> <br />
+          <span className="font-bold sm:text-sm underline text-amber-400 hover:text-white mb-5">
+            <a href="#" target="_blank" rel="noreferrer">
+              LEARN MORE </a> </span>
         </p>
       </div>
     </>
