@@ -3,13 +3,14 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
+// ADD YOUR OWN FIREBASE CONFIG HERE
 const firebaseConfig = {
-  apiKey: "AIzaSyDAViJq9I62DBjrtsVmdpj82YBbqnMR_QE",
-  authDomain: "phishr-d74a9.firebaseapp.com",
-  projectId: "phishr-d74a9",
-  storageBucket: "phishr-d74a9.appspot.com",
-  messagingSenderId: "562656864810",
-  appId: "1:562656864810:web:11fe4ab7e9be5fa979f153"
+  apiKey: "xxxxxxxxxxxxxxxxxxxxx",
+  authDomain: "xxxxxxxxxxxxxxxxxxxxx",
+  projectId: "xxxxxxxxxxxxxxxxxxxxxxx",
+  storageBucket: "xxxxxxxxxxxxxxxxxxxxx",
+  messagingSenderId: "xxxxxxxxxxxxxxxxxxxxx",
+  appId: "xxxxxxxxxxxxxxxxxxxxxx"
 };
 
 // Initialize Firebase app
