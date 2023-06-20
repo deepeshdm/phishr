@@ -23,8 +23,6 @@ This web app takes a URL as an input and detects potentially malicious URLs by p
  - It utilizes an AI model to predict the maliciousness of the URL.
  - The app checks if the URL is present in the URL reporting database.
 
-To see how exactly the model works, could you check out the model training repository [here](https://github.com/deepeshdm/Phishing-Attack-Domain-Detection)?
-
 ## To Run (Locally)
 
 1. Git clone the project repository on your local system
