@@ -57,7 +57,7 @@ npm start
 
 
 - Checkout the REST API - [here](https://github.com/deepeshdm/Phishr-API) 
-- Model Training repository - [here](https://github.com/deepeshdm/Phishing-Attack-Domain-Detection)
+- Model Training repository - [here]([https://github.com/deepeshdm/Phishing-Attack-Domain-Detection](https://github.com/deepeshdm/Phishr-API/tree/main/notebooks)https://github.com/deepeshdm/Phishr-API/tree/main/notebooks)
 
 
 
