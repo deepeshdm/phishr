@@ -1,9 +1,9 @@
 <h1 align="center"> PHISHr 🎣🕵️ </h1>
 
 ### A Cybersecurity utility for detecting malicious phishing URLs using Machine Learning.
- - 🔒 URL Scanning: Instantly analyze URLs for potential threats and stay one step ahead of phishing attacks.
- - 🚨 Suspicious URL Reporting: Contribute to a safer online community by reporting suspicious URLs and helping others stay protected.
- - 🔍 Typosquatting Detection: Uncover those sneaky imposters with our clever feature that identifies similar-looking domains.
+ - 🔒 <b> URL Scanning </b>: Instantly analyze URLs for potential threats and stay one step ahead of phishing attacks.
+ - 🚨 <b> Suspicious URL Reporting </b>: Contribute to a safer online community by reporting suspicious URLs and helping others stay protected.
+ - 🔍 <b> Typosquatting Detection </b>: Uncover those sneaky imposters with our clever feature that identifies similar-looking domains.
 
 <div align="center">
 <Img src="/src/assets/Phishing-Attacks.gif" width="60%"/>
