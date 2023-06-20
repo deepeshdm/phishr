@@ -1,15 +1,27 @@
 # PHISHr 🎣🕵️
 
 ### A Cybersecurity utility for detecting malicious phishing URLs using Machine Learning
-**🔥 Official React Website :** https://phishr.vercel.app/
+**🔥 Official React Website:** https://phishr.vercel.app/
 
 <div align="center">
 <Img src="/src/assets/Phishing-Attacks.gif" width="60%"/>
 </div>
 
-## How does it work ?
+## How does it work? 🤷‍♂️
 
-The API takes a string URL as input and returns a probability value (0-100) of URL being malicious. We declare a URL malicious if it crosses a probability value of 70%. To determine if a URL is malicious or legitimate we use a Neural Network trained on 600,000 URLs. To see how exactly the model works,checkout the model training repository [here](https://github.com/deepeshdm/Phishing-Attack-Domain-Detection).
+This web app takes a URL as an input and detects potentially malicious URLs by performing thorough checks such as blacklist verification, SSL certificate presence, HTTPS usage, and AI prediction. It provides a score and flags for various checks conducted.  The detection process involves several steps:
+ - It checks if the URL is present in the top 1 million valid sites database.
+ - It verifies if the URL is blacklisted in any of the 40 sources checked.
+ - The app checks for the presence of an SSL certificate, ensuring secure communication.
+ - The app validates against Google Safe Browsing and Norton Web Safe databases.
+ - It checks if the URL is blacklisted in McAfee and Sucuri blacklists.
+ - The app identifies temporary domains registered from unsecure sources.
+ - It verifies if the URL is older than 3 months.
+ - The app checks if the URL is blacklisted in local blacklists and IP sets.
+ - It utilizes an AI model to predict the maliciousness of the URL.
+ - The app checks if the URL is present in the URL reporting database.
+
+To see how exactly the model works, could you check out the model training repository [here](https://github.com/deepeshdm/Phishing-Attack-Domain-Detection)?
 
 <div align="center">
 <img src="/src/assets/phishr-demo.gif" width="80%"/>
