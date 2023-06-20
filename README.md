@@ -6,7 +6,7 @@
  - 🔍 <b> Typosquatting Detection </b>: Uncover those sneaky imposters with our clever feature that identifies similar-looking domains.
 
 <div align="center">
-<Img src="/src/assets/Phishing-Attacks.gif" width="60%"/>
+<img src="/src/assets/phishr-demo3.gif" width="80%"/>
 </div>
 
 ## How does it work? 🤷‍♂️
@@ -24,10 +24,6 @@ This web app takes a URL as an input and detects potentially malicious URLs by p
  - The app checks if the URL is present in the URL reporting database.
 
 To see how exactly the model works, could you check out the model training repository [here](https://github.com/deepeshdm/Phishing-Attack-Domain-Detection)?
-
-<div align="center">
-<img src="/src/assets/phishr-demo.gif" width="80%"/>
-</div>
 
 ## To Run (Locally)
 
