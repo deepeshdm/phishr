@@ -1,4 +1,4 @@
-# PHISHr
+# PHISHr 🎣🕵️
 
 ### A Cybersecurity utility for detecting malicious phishing URLs using Machine Learning
 **🔥 Official React Website :** https://phishr.vercel.app/
@@ -18,17 +18,30 @@ The API takes a string URL as input and returns a probability value (0-100) of U
 ## To Run (Locally)
 
 1. Git clone the project repository on your local system
-```javascipt
+```javascript
 git clone https://github.com/deepeshdm/phishr.git
 ```
 
 2. Install dependencies in package.json
-```javascipt
+```javascript
 npm install
 ```
 
-3. Deploy project on local server
-```javascipt
+3. Create a new Firebase project with Firestore and Google Authentication enabled. Replace the config in "src/db/firebase-config.js" with your own.
+```
+// ADD YOUR OWN FIREBASE CONFIG HERE
+const firebaseConfig = {
+  apiKey: "xxxxxxxxxxxxxxxxxxxxx",
+  authDomain: "xxxxxxxxxxxxxxxxxxxxx",
+  projectId: "xxxxxxxxxxxxxxxxxxxxxxx",
+  storageBucket: "xxxxxxxxxxxxxxxxxxxxx",
+  messagingSenderId: "xxxxxxxxxxxxxxxxxxxxx",
+  appId: "xxxxxxxxxxxxxxxxxxxxxx"
+};
+```
+
+4. Deploy project on the local server
+```javascript
 npm start
 ```
 
